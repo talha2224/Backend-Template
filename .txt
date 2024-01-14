@@ -1,0 +1,3 @@
+nodeCache.set("key",json.stringify(data))
+nodeCache.has("key")
+Json.parse(nodeCache.get("key"))
