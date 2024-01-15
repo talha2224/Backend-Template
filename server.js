@@ -3,7 +3,7 @@ const cors = require('cors')
 const morgan = require('morgan');4
 const cache = require('node-cache')
 require('dotenv').config()
-const databaseConnection = require("./utils/dbConnection");
+const databaseConnection = require("./configurations/dbConnection");
 const { ErrorMiddleware, ErrorResponse } = require('./middlewares/Error');
 const { routers } = require('./routers');
 

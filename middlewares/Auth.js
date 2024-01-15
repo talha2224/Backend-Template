@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken')
 const { asyncErrorHandler, ErrorResponse } = require('./Error')
 
 const generateAuthToken = async(payload)=>{
-    let token = await jwt.sign(payload,token,process.env.AUTHKEY,{expiresIn:"2h"})
+    let token = await jwt.sign(payload,token,process.env.AUTHKEY,{expiresIn:"7d"})
     return token
 }
 
